@@ -6,6 +6,7 @@ A visual drag-and-drop HR workflow builder.
 ## Getting Started
 
 ```bash
+cd hr-workflow-designer
 npm install
 npm run dev
 ```
