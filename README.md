@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # HR Workflow Designer — Tredence Case Study
 
 A visual drag-and-drop HR workflow builder.
@@ -51,3 +52,6 @@ src/
 - Auto-layout (Dagre)
 - Node templates
 - Backend persistence (FastAPI + PostgreSQL)
+=======
+# Hr-Workflow-Designer
+>>>>>>> 1cb45f441d59f478042485c23944c6deed134167
