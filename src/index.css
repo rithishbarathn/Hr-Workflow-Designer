@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #0a0918;
+  color: #e2e0f0;
+}
+
+/* React Flow overrides */
+.react-flow__controls button {
+  background: #0f0e17 !important;
+  border-color: #1e1d2e !important;
+  color: #8b89a8 !important;
+}
+
+.react-flow__controls button:hover {
+  background: #1e1d35 !important;
+  color: #e2e0f0 !important;
+}
+
+.react-flow__minimap {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.react-flow__edge-path {
+  stroke: #6366f1;
+  stroke-width: 2;
+}
+
+.react-flow__edge.selected .react-flow__edge-path {
+  stroke: #a78bfa;
+}
+
+.react-flow__handle {
+  transition: transform 0.15s;
+}
+
+.react-flow__handle:hover {
+  transform: scale(1.4);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2d2b45;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3d3b58;
+}
+
+/* Range input */
+input[type="range"] {
+  -webkit-appearance: none;
+  height: 4px;
+  background: #2d2b45;
+  border-radius: 2px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  background: #6366f1;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: #a78bfa;
+}
+
+/* Select */
+select option {
+  background: #16152a;
+  color: #e2e0f0;
+}
