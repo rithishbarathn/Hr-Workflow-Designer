@@ -1,19 +1,50 @@
-<<<<<<< HEAD
-# HR Workflow Designer — Tredence Case Study
+# 🧩 HR Workflow Designer
 
-A visual drag-and-drop HR workflow builder.
+A visual drag-and-drop HR workflow builder that lets teams design, simulate, and export automated HR processes — no code required.
 
-## Getting Started
+![TypeScript](https://img.shields.io/badge/TypeScript-94.7%25-blue?logo=typescript)
+![React](https://img.shields.io/badge/React-Vite-61DAFB?logo=react)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Open Source](https://img.shields.io/badge/Open%20Source-%E2%9D%A4-red)
 
-```bash
-cd hr-workflow-designer
-npm install
-npm run dev
-```
+---
 
-Open http://localhost:5173
+## 🚀 Live Demo
 
-## Architecture
+> Coming soon — deploy link will be added here
+
+---
+
+## 📌 What is this?
+
+HR teams often struggle with complex approval chains, onboarding processes, and task routing. **HR Workflow Designer** provides a visual canvas where anyone can build, configure, and simulate these workflows without writing a single line of code.
+
+---
+
+## ✨ Features
+
+- 🖱️ **Drag & Drop Canvas** — Build workflows visually using 5 node types: `Start`, `Task`, `Approval`, `Automated Step`, `End`
+- ⚙️ **Per-Node Configuration** — Dynamic forms for each node type with custom fields
+- 🤖 **Automated Steps** — Loads actions from API and renders dynamic parameter fields
+- 🧪 **Sandbox Simulation** — Validates workflow graph, simulates execution, and shows step-by-step log + JSON view
+- 📤 **Export / Import** — Save and load workflows as JSON files
+- 🗺️ **MiniMap + Zoom Controls** — Navigate large workflows easily
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| React + Vite | Frontend framework |
+| TypeScript | Type safety |
+| React Flow | Visual node canvas |
+| Zustand | State management |
+| CSS Modules | Styling |
+
+---
+
+## 📁 Project Structure
 
 ```
 src/
@@ -30,29 +61,66 @@ src/
 └── types/                   # nodes.ts, workflow.ts
 ```
 
-## Features
+---
 
-- Drag & drop 5 node types: Start, Task, Approval, Automated Step, End
-- Per-node config forms with dynamic fields
-- Automated Step loads actions from mock API + renders dynamic param fields
-- Sandbox panel: validates graph, simulates execution, shows step log + JSON view
-- Export/Import workflow as JSON
-- MiniMap + zoom controls
+## ⚡ Getting Started
 
-## Design Decisions
+```bash
+# Clone the repository
+git clone https://github.com/rithishbarathn/Hr-Workflow-Designer.git
 
-- **Zustand** over Context — simpler, no provider boilerplate
-- **Local mock functions** over JSON Server — zero config, no extra process
-- **`Record<string, unknown>`** for React Flow node data (satisfies generic constraint), cast to specific types in forms
-- **Topological sort** for simulation execution order
+# Navigate into the project
+cd Hr-Workflow-Designer
 
-## What I'd Add With More Time
+# Install dependencies
+npm install
 
-- Undo/redo
-- Visual validation errors on nodes (red border)
-- Auto-layout (Dagre)
-- Node templates
-- Backend persistence (FastAPI + PostgreSQL)
-=======
-# Hr-Workflow-Designer
->>>>>>> 1cb45f441d59f478042485c23944c6deed134167
+# Start the development server
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
+## 🧠 Design Decisions
+
+- **Zustand over Context** — simpler state management, no provider boilerplate
+- **Local mock functions over JSON Server** — zero config, no extra process needed
+- **Topological sort** for correct simulation execution order
+- **`Record<string, unknown>`** for React Flow node data to satisfy generic constraints
+
+---
+
+## 🔮 Roadmap
+
+- [ ] Undo / Redo support
+- [ ] Visual validation errors on nodes (red border highlight)
+- [ ] Auto-layout using Dagre
+- [ ] Node templates library
+- [ ] Backend persistence (FastAPI + PostgreSQL)
+- [ ] Live deployment
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -m 'Add some feature'`)
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 👨‍💻 Author
+
+**Rithish Barathn** — [GitHub](https://github.com/rithishbarathn)
